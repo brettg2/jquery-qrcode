@@ -11,9 +11,9 @@
     </style>
   </head>
 <body>
-  <input data-for="qrcodeCanvas1" onkeyup="$('#' + $(this).data('for')).empty().qrcode({text : this.value})" />
+  <input onkeyup="$('#qrcodeCanvas1').empty().qrcode({text : $(this).val()})" />
   <div id="qrcodeCanvas1"></div>
-  <input data-for="qrcodeCanvas2" onkeyup="$('#' + $(this).data('for')).empty().qrcode({text : this.value})"	/>
+  <input onkeyup="$('#qrcodeCanvas2').empty().qrcode({text : $(this).val()})" />
   <div id="qrcodeCanvas2"></div>
 </body>
 </html>
