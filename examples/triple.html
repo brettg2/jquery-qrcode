@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Triple Codes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="../src/qrcode.js"></script>
+    <style>
+      input {width: 100%}
+      div {margin-bottom: 50px}
+	  body {font-family:arial, helvetica;}
+    </style>
+  </head>
+<body>
+  <input type='text' />
+  Address: <input onkeyup="$('#qrcodeCanvas1').empty().qrcode({text : $(this).val()})" />
+  <div id="qrcodeCanvas1"></div>
+  View: <input onkeyup="$('#qrcodeCanvas2').empty().qrcode({text : $(this).val()})" />
+  <div id="qrcodeCanvas2"></div>
+  Spend: <input onkeyup="$('#qrcodeCanvas3').empty().qrcode({text : $(this).val()})" />
+  <div id="qrcodeCanvas3"></div>
+</body>
+</html>
